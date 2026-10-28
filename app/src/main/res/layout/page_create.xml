@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:overScrollMode="never" android:scrollbars="none">
+        <LinearLayout android:id="@+id/createCol" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create" />
+            <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="Pick a source, tune the look, open Studio." />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto settings" />
+                <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="One tap picks the best size, codec and bitrate for this phone." />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal">
+                    <Button android:id="@+id/btnAuto" style="@style/Btn.Primary" android:text="Auto-optimize" />
+                    <Button android:id="@+id/btnReset" style="@style/Btn.Soft" android:layout_marginStart="10dp" android:text="Reset" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Project" />
+                <EditText android:id="@+id/etProject" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Project name" android:inputType="text" android:singleLine="true" />
+                <EditText android:id="@+id/etFile" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:hint="File name" android:inputType="text" android:singleLine="true" />
+                <TextView android:id="@+id/tvPath" style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:fontFamily="monospace" android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+                <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="HTML source" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="horizontal">
+                    <TextView android:id="@+id/chipFile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:paddingBottom="8dp" android:paddingEnd="14dp" android:paddingStart="14dp" android:paddingTop="8dp" android:text="File" android:textSize="13sp" />
+                    <TextView android:id="@+id/chipPaste" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp" android:paddingBottom="8dp" android:paddingEnd="14dp" android:paddingStart="14dp" android:paddingTop="8dp" android:text="Paste code" android:textSize="13sp" />
+                    <TextView android:id="@+id/chipUrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingBottom="8dp" android:paddingEnd="14dp" android:paddingStart="14dp" android:paddingTop="8dp" android:text="URL" android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/pnlFile" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <Button android:id="@+id/btnPick" style="@style/Btn.Soft" android:text="Choose HTML file" />
+                    <TextView android:id="@+id/tvPicked" style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="No file chosen" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/pnlPaste" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <EditText android:id="@+id/etHtml" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="monospace" android:gravity="top" android:hint="&lt;html&gt; ... &lt;/html&gt;" android:inputType="textMultiLine|textNoSuggestions" android:minLines="6" android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/pnlUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <EditText android:id="@+id/etUrl" style="@style/Input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="https://example.com/page.html" android:inputType="textUri" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/settingsHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/surface" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+        <TextView android:id="@+id/tvEst" style="@style/Sub" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textSize="12sp" />
+        <Button android:id="@+id/btnStudio" style="@style/Btn.Primary" android:text="Open Studio" />
+    </LinearLayout>
+</LinearLayout>

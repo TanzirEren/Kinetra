@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:orientation="vertical">
+    <FrameLayout android:id="@+id/pages" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <LinearLayout android:id="@+id/nav" android:layout_width="match_parent" android:layout_height="66dp"
+        android:background="@drawable/bg_nav" android:elevation="10dp" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/nav0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/navi0" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_home" />
+            <TextView android:id="@+id/navt0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Home" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/nav1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/navi1" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_add" />
+            <TextView android:id="@+id/navt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Create" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/nav2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/navi2" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_studio" />
+            <TextView android:id="@+id/navt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Studio" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/nav3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/navi3" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_library" />
+            <TextView android:id="@+id/navt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Library" android:textSize="11sp" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/nav4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <ImageView android:id="@+id/navi4" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_tune" />
+            <TextView android:id="@+id/navt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="More" android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

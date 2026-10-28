@@ -1,0 +1,63 @@
+<resources>
+    <style name="Theme.Kinetra" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:colorControlActivated">@color/primary</item>
+        <item name="android:colorControlNormal">@color/sub</item>
+        <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:textColorHint">@color/sub</item>
+    </style>
+    <style name="H1">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="H2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Sub">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sub</item>
+    </style>
+    <style name="Btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+    </style>
+    <style name="Btn.Primary">
+        <item name="android:background">@drawable/bg_btn_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Btn.Soft">
+        <item name="android:background">@drawable/bg_btn_soft</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Btn.White">
+        <item name="android:background">@drawable/bg_btn_white</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="Btn.Glass">
+        <item name="android:background">@drawable/bg_btn_glass</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Input">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:padding">14dp</item>
+    </style>
+</resources>

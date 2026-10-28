@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:overScrollMode="never" android:scrollbars="none">
+    <LinearLayout android:id="@+id/moreCol" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More" />
+        <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="Preferences, storage and device info." />
+        <LinearLayout android:id="@+id/moreHost" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>

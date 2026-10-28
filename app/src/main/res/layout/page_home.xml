@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:overScrollMode="never" android:scrollbars="none">
+    <LinearLayout android:id="@+id/homeCol" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp" android:layout_marginTop="6dp"
+            android:background="@drawable/bg_hero" android:orientation="vertical" android:padding="22dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="36dp"
+                android:adjustViewBounds="true" android:src="@drawable/wordmark_white" />
+            <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" android:text="Turn any HTML into a crisp MP4."
+                android:textColor="@color/white" android:textSize="24sp" />
+            <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:text="Rendered on your phone. No uploads, no limits."
+                android:textColor="#CCFFFFFF" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:orientation="horizontal">
+                <Button android:id="@+id/btnNew" style="@style/Btn.White" android:text="New project" />
+                <Button android:id="@+id/btnOpen" style="@style/Btn.Glass" android:layout_marginStart="10dp" android:text="Open HTML" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp" android:background="@drawable/bg_card"
+            android:orientation="horizontal" android:padding="16dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:id="@+id/stVideos" style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" />
+                <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Videos" android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:id="@+id/stSize" style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 MB" android:textSize="22sp" />
+                <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rendered" android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <TextView android:id="@+id/stProjects" style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" />
+                <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Projects" android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Quick start" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp" android:scrollbars="none" android:clipToPadding="false">
+            <LinearLayout android:id="@+id/presetRow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="How it works" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp" android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
+            <TextView style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6dp"
+                android:text="1  Pick an HTML file, paste code, or enter a URL\n2  Tune size, fps, quality and effects (or tap Auto)\n3  Hit Start in Studio and watch it record live\n4  Find your MP4 in Kinetra / Project / File" />
+        </LinearLayout>
+
+        <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Recent renders" />
+        <LinearLayout android:id="@+id/recentList" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+        <TextView android:id="@+id/recentEmpty" style="@style/Sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nothing yet. Your first render will show up here." />
+    </LinearLayout>
+</ScrollView>
